@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a5a6a2c15f.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+    <title>الموقع - سوق أونلاين لمواد البناء في مصر</title>
+</head>
+<body>
+    <!--we are going to start the navbar-->
+    <!--nav has 2 divs, first one for website services and the secondis for language and login-->
+    <nav>
+        <a class="navLogo" href="#"><img class="navLogo" src="https://elmawkaa.com/img/logo.png" alt="elmawkaa_logo"></a>
+        <div class="list1">
+            <ul>
+                <li><a href="#">مواد بناء</a></li>
+                <li><a href="#">أحدث الطلبيات</a></li>
+                <li><a href="#">كيف يعمل؟</a></li>
+                <li><a href="#">سجل كمورد</a></li>
+                <li><a href="#">المدونة</a></li>
+                <li><a href="#">الباقات</a></li>
+                <li><a href="#">اتصل بنا</a></li>
+    
+    
+            </ul>
+        </div>
+        <div class="list2">
+            <ul> <!--this list has js function that opens the dropdownlist of the langauge-->
+                <li><a href="#"><i class="fas fa-user"></i>تسجيل دخول</a></li>
+                <span class="badge-new">جديد</span>
+                <div class="dropdown">
+                    <button onclick="myFunction()"><img src="https://elmawkaa.com/flags/1x1/egy.svg" alt=""></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">المملكة العربية السعودية</a>
+                    </div>
+                </div>
+
+            </ul>
+
+        </div>
+
+    </nav>
+    <header><!--begin of the header-->
+        <h1>تعبت من عملية شراء مواد البناء في مصر؟</h1>
+        <p>اطلب عروض أسعار دلوقتي أونلاين من أكبر قاعدة بيانات للموردين في مصر</p>
+        <div class="dropdown2"> <!--this search bar has js function opens a dropdownlist and filter for search-->
+            <input onkeyup="filterFunction()" onclick="myFunction2()" type="text" placeholder=" &ldquo;جرب تكتب &rdquo;أسمنت" id="search" >
+            <div id="myDropdown2" class="droplist">
+                <a href="#">بلاط</a>
+                <a href="#">قواطيع المونيوم</a>
+                <a href="#">خرسانة رغوية</a>
+                <a href="#">جرانيت</a>
+                <a href="#">كابلات جهد منخفض</a>
+                <a href="#">نجيلة صناعي</a>
+                <a href="#">كرانيش</a>
+                <a href="#">عمالة</a>
+                <a href="#">بوابات حديد</a>
+                <a href="#">نحاس مقوي</a>
+                <a href="#">خرسانة</a>
+                <a href="#">طوب أحمر عادي</a>
+                <a href="#">طوب أحمر طويل</a>
+                <a href="#">أسمنت مفرغ</a>
+                <a href="#">أسمنت سايب</a>
+                <a href="#">أسمنت عادي</a>
+            </div>
+            <button class="srch-btn"><i class="fa fa-search"></i></button>
+        </div>
+    </header>
+
+    <!--start of products section-->
+    <section class="products">
+        <h2>اطلب عروض أسعار لمواد البناء الآن</h2>
+        <div class="prod-div-flex"><!--this div made for flex-box styling-->
+            <div class="prod">
+                <img class="prod-img" src="https://dl.airtable.com/.attachmentThumbnails/008c959a258da5e5c5cf9ea2ce7bc7db/f3653c96?ts=1655973548&userId=usrts0iNIpunXgt1e&cs=ef666f7c876aa8c9" alt="">
+                <div class="prod-title">
+                    <div class="line"></div><!--the purple line above the title(made in css)-->
+                    <h3>خرسانة جاهزة</h3>
+                </div>
+                <div class="prodCats"><!--products categories div -->
+                    <ul>
+                        <li>قواعد</li>
+                        <li>أعمدة</li>
+                        <li>بلاطات</li>
+                        <li>أرضيات</li>
+                        <li>مقاوم</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="prod">
+                <img class="prod-img" src="https://dl.airtable.com/.attachmentThumbnails/43ae6e976095d7849161c5b8b3ea5635/6951758e?ts=1655973548&userId=usrts0iNIpunXgt1e&cs=f3dc1e031914ea81" alt="">
+                <div class="prod-title">
+                    <div class="line"></div>
+                    <h3>أسمنت معبأ</h3>
+                </div>
+                <div class="prodCats">
+                    <ul>
+                        <li>أسمنت السويس</li>
+                        <li>شكاير أسمنت</li>
+                        <li>شيكارة</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="prod">
+                <img class="prod-img" src="https://dl.airtable.com/.attachmentThumbnails/cb050052434621fc419c77467b3871b0/0d8d3de7?ts=1655973548&userId=usrts0iNIpunXgt1e&cs=793872ba52b65cd2" alt="">
+                <div class="prod-title">
+                    <div class="line"></div>
+                    <h3>أسمنت سايب</h3>
+                </div>
+                <div class="prodCats">
+                    <ul>
+                        <li>أسمنت السويس</li>
+                        <li>بني سويف</li>
+                        <li>السويدي</li>
+                        <li>حلوان</li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <div class="prod">
+                <img class="prod-img" src="https://dl.airtable.com/.attachmentThumbnails/d46ad442142ac06e744728a9e5b56649/43effc04?ts=1655973548&userId=usrts0iNIpunXgt1e&cs=88b488d02a8fe2e7" alt="">
+                <div class="prod-title">
+                    <div class="line"></div>
+                    <h3>حديد تسليح</h3>
+                </div>
+                <div class="prodCats">
+                    <ul>
+                        <li>عز</li>
+                        <li>المصريين</li>
+                        <li>بشاي</li>
+                        <li>العتال</li>
+                        <li>الدخيلة</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="prod">
+                <img class="prod-img" src="https://dl.airtable.com/.attachmentThumbnails/6d554245de8f54825c816616c768af30/18628a3e?ts=1655973548&userId=usrts0iNIpunXgt1e&cs=51095a8b0bba1ad7" alt="">
+                <div class="prod-title">
+                    <div class="line"></div>
+                    <h3>طوب أحمر طفلي مفرغ</h3>
+                </div>
+                <div class="prodCats">
+                    <ul>
+                        <li>طوب احمر مفرغ</li>
+                        <li>طوب احمر عادي</li>
+                        <li>طوب احمر طويل</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="prod">
+                <img class="prod-img" src="https://dl.airtable.com/.attachmentThumbnails/6185daa5b7eb767898427c33a9416fb9/43becb74?ts=1655973548&userId=usrts0iNIpunXgt1e&cs=1f4a0e5ea67b73ba" alt="">
+                <div class="prod-title">
+                    <div class="line"></div>
+                    <h3>طوب أسمنتي مصمت</h3>
+                </div>
+                <div class="prodCats">
+                    <ul>
+                        <li>أسمنتي مصمت</li>
+                        <li>نص آلي</li>
+                        <li>آلي</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="prod">
+                <img class="prod-img" src="https://dl.airtable.com/.attachmentThumbnails/d5ee6e7b9b8d030cc450a841eb5b2443/379c9277?ts=1655973548&userId=usrts0iNIpunXgt1e&cs=8fe6dabee997a632" alt="">
+                <div class="prod-title">
+                    <div class="line"></div>
+                    <h3>بلوك أسمنتي مفرغ</h3>
+                </div>
+                <div class="prodCats">
+                    <ul>
+                        <li>أسمنتي مفرغ</li>
+                        <li>نص آلي</li>
+                        <li>آلي</li>
+                        <li>بلوكات أسمنتية</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="prod">
+                <img class="prod-img" src="https://dl.airtable.com/.attachmentThumbnails/da17affc18154219fc92fcc14f9f42ed/52c254e1?ts=1655973548&userId=usrts0iNIpunXgt1e&cs=a7922b7c14168103" alt="">
+                <div class="prod-title">
+                    <div class="line"></div>
+                    <h3>بلاط موزايكو</h3>
+                </div>
+                <div class="prodCats">
+                    <ul>
+                        <li>بلاط موزايكو</li>
+                        <li>بلاط تيرازو</li>
+                        <li>موزايكو بلدي</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="prod">
+                <img class="prod-img" src="https://dl.airtable.com/.attachmentThumbnails/e4a9aec4ee3e3304c86883e9cf46b114/b25c0332?ts=1655973548&userId=usrts0iNIpunXgt1e&cs=70da6a9fba62de10" alt="">
+                <div class="prod-title">
+                    <div class="line"></div>
+                    <h3>بلاط انترلوك</h3>
+                </div>
+                <div class="prodCats">
+                    <ul>
+                        <li>بلاط انترلوك</li>
+                        <li>بلاط رصيف</li>
+                        <li>بلاط خرساني متداخل</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div><!--end of products section-->
+
+        <!--start of offers section-->
+        <section class="offers">
+            <h2 class="offer-head">أحدث طلبات عروض الأسعار</h2>
+            <div class="offer-grid"> <!--for grid styling-->
+                <div class="offer-content">
+                    <h4>حجر بازلت</h4>
+                    <span> RFQ-12626</span>
+                    <div>
+                        <p>180 م2 - الدفع كاش - نشرت منذ 11 يوماً</p>
+                        <p>عروض الأسعار : 1</p>
+                        <h5>عميل ذهبي <i style="color:#edbb32;" class="fa fa-star"></i></h5>
+                        <p class="locate-p">مدينة بدر - القاهرة <i style="color: #9562ae;" class="fa-solid fa-location-dot"></i></p>
+                    </div>
+                    
+                </div>
+                       
+        
+                <div class="offer-content">
+                    <h4>أسمنت معبأ</h4>
+                    <span> RFQ-12626</span>
+                    <div>
+                        <p>60 طن - الدفع كاش - نشرت منذ 11 يوماً</p>
+                        <p>عروض الأسعار : 1</p>
+                        
+                        <p class="locate-p">مدينة بدر - القاهرة <i style="color: #9562ae;" class="fa-solid fa-location-dot"></i></p>
+                    </div>
+                </div>
+                   
+                <div class="offer-content">
+                    <h4>أسمنت معبأ</h4>
+                    <span> RFQ-12626</span>
+                    <div>
+                        <p>60 طن - الدفع كاش - نشرت منذ 11 يوماً</p>
+                        <p>عروض الأسعار : 0</p>
+                        
+                        <p class="locate-p">مدينة بدر - القاهرة <i style="color: #9562ae;" class="fa-solid fa-location-dot"></i></p>
+                    </div>
+                </div>
+                   
+                <div class="offer-content">
+                    <h4>سن</h4>
+                    <span> RFQ-12626</span>
+                    <div>
+                        <p>300 م3 - الدفع كاش - نشرت منذ 11 يوماً</p>
+                        <p>عروض الأسعار : 3</p>
+                        
+                        <p class="locate-p">مدينة بدر - القاهرة <i style="color: #9562ae;" class="fa-solid fa-location-dot"></i></p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="offer-btn" href="#">اعرض جميع الطالبين</a>
+            
+           
+        </section>
+    </section>
+
+    <!--end of offers section-->
+
+    <!--start of website tutorial section-->
+    <section class="website">
+        <h2>كيف تعمل منصة الموقع؟</h2>
+        <div class="mob-grid">
+            <div class="mob">
+                <h5><i class="fa-solid fa-check"></i>اختار مواد البناء المطلوبة</h5>
+                <img class="mob-img" src="https://elmawkaa.com/img/01-select-product.jpg" alt="">
+            </div>
+    
+            <div class="mob">
+                <h5><i class="fa-solid fa-gem"></i>املأ البيانات واطلب عرض سعر</h5>
+                <img class="mob-img" src="https://elmawkaa.com/img/02-fill-form.jpg" alt="">
+            </div>
+    
+            <div class="mob">
+                <h5><i class="fa-solid fa-paper-plane"></i>اختار أحسن عرض ونفذ الطلبية</h5>
+                <img class="mob-img" src="https://elmawkaa.com/img/03-select-quotation.jpg" alt="">
+            </div>
+        </div>
+        
+        <a class="website-btn" href="#">خطوات طلب عروض الأسعار</a>
+
+    </section>
+
+    <!--start of companies and sponsers section-->
+    <section class="brands">
+        <h2>شركاؤنا</h2>
+        <p>شركاؤنا هم مصدر نجاحنا</p>
+        <div class="brand-img">
+            <img style="height: 200px;" src="https://elmawkaa.com/img/partners/tiec%20Logo.jpg" alt="">
+            <img style="height: 200px;" src="https://elmawkaa.com/img/partners/Eijad%20logo.png" alt="">
+            <img style="height: 200px;" src="https://elmawkaa.com/img/partners/Mint%20logo.png" alt="">
+            <img style="height: 200px;" src="https://elmawkaa.com/img/partners/500%20logo.png" alt="">
+            <img style="height: 150px;" src="https://elmawkaa.com/img/partners/injaz%20logo.png" alt="">
+            <img style="height: 180px;" src="https://elmawkaa.com/img/partners/Egypt%20Projects.png" alt="">
+
+        </div>
+
+    </section>
+
+    <!--start of download the app section-->
+    <section class="app">
+        <h2>حمل تطبيق الموقع واحصل على مواد البناء بدون تعب<br> الآن</h2>
+        <div class="app-img">
+            <img style="margin-left:30px ;" src="https://elmawkaa.com/img/apple.png" alt="">
+            <img src="https://elmawkaa.com/img/android.png" alt="">
+
+        </div>
+
+    </section>
+<!--start of the footer-->
+    <footer>
+        <div class="contact-flex">
+            <div class="contact">
+                <i class="fa fa-envelope-o"></i>
+                <h6>البريد الإلكتروني</h6>
+                <p >Info@elmawkaa.com</p>
+            </div>
+    
+            <div class="contact">
+                <i class="fa fa-phone"></i>
+                <h6>هاتف</h6>
+                <p >(+20) 100 282 0786</p>
+            </div>
+            
+            <div class="contact">
+                <i class="fa-solid fa-location-dot"></i>
+                
+                <h6>مكاننا</h6>
+                <p><br> - ١٧١ شارع التحرير مبني الحرم اليوناني بعابدين GrEEK Campus، القاهرة،مصر</p>
+                <p><br> - 2035 Sunset Lake Road, Suite B-2, in the city of <br> Newark, zip code 19702 and county ofNew Castle,<br> USA</p>
+            </div>
+        </div>
+        
+        
+        <div class="media">
+            <ul>
+                <li><a href="#"></a><i class="fa fa-facebook"></i></li>
+                <li><a href="#"></a><i class="fa fa-twitter"></i></li>
+                <li><a href="#"></a><i class="fa fa-instagram"></i></li>
+                <li><a href="#"></a><i class="fa fa-linkedin"></i></li>
+            </ul>
+            <p>حقوق النشر 2022 - Elmawkaa, Inc. | جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+
+    
+<!--end of the website-->
+
+
+
+</body>
+</html>

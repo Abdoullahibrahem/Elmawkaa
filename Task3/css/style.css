@@ -1,0 +1,526 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    direction: rtl;
+    overflow-x:hidden; /*to prevent website to make scroll bar in x-axis*/
+    
+}      
+nav{/*nav bar styling*/
+    background-color:rgba(0, 0, 0, 0.75);
+    direction: rtl;
+    height: 58px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    border-bottom: 1px solid white;
+    
+}
+nav .navLogo{
+    height: 50px;
+    position: absolute;
+    right: 16%;
+    top: 2px;
+
+}
+nav ul{
+    position: absolute;
+    right: 25%;
+    padding-top: 3px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding-left: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+nav .list2 ul {
+    position: absolute;
+    right: 71%;
+    display: flex;
+}
+nav .list2 ul i{
+    padding-left: 3px;
+}
+nav .list2 ul .badge-new{/*for جديد icon in login */
+    background-color: rgb(2, 162, 2);
+    border-radius: 4px;
+    font-size: 12px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    height: 13px;
+    line-height: 13px;
+    padding: 1px 4px;
+    margin: 4px -5px 0px 15px;
+}
+nav .list2 .dropdown .dropdown-content a{ /*for language saudi list*/
+    text-decoration: none;
+    color: black;
+    background-color: whitesmoke;
+    position: relative;
+    top: 18px;
+    z-index: 1;
+
+}
+nav .list2 .dropdown .dropdown-content {/*this will make the list disapear until */
+                                        /* the js function does its job to display*/ 
+                                        /*it again when the user click on the button*/
+    display: none;
+}
+nav .list2 .dropdown button img{ /*egypt-flag image */
+    height: 25px;
+    border-radius: 50%;
+
+
+}
+nav .list2 .dropdown button{/*styling for the dropdown list button*/
+    height: 35px;
+    background-color:rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    border-color: rgba(255, 255, 255, 0.262);
+    position: absolute;
+    top: -2px;
+}
+nav .list2 .dropdown .show{/*this will show the list by js function*/
+    display: block;
+}
+header{/*start of the header*/
+    background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url(https://elmawkaa.com/img/bg/home-bg.jpg);/*to make gradient layer above the bg-image*/
+    height: 75vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+header h1{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 53px;
+    text-align: center;
+    position: relative;
+    top: 250px;
+    
+
+}
+header p{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top: 220px;
+
+}
+header .dropdown2{/*the search list*/
+    display: grid;
+    place-items: center;
+    position: relative;
+    top: 235px;
+
+}
+header .dropdown2 .droplist a{ /*search elements*/
+    text-decoration: none;
+    display: block;
+    color: rgba(12, 12, 12, 0.46);
+
+}
+header .dropdown2 .droplist :hover{
+    background-color: #a76dc3;
+
+}
+header .dropdown2 #search{ /* input type text styling*/
+    height: 55px;
+    width: 650px;
+    border-radius: 7px;
+    
+    
+    
+}
+header .dropdown2 ::placeholder{
+    text-align: center;
+    color: rgba(12, 12, 12, 0.46);
+    font-weight: 500;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} 
+
+header .dropdown2 .droplist{
+    background-color: #f6f6f6;
+    min-width: 650px;
+    overflow-y: scroll;
+    display: none;
+    max-height: 200px;
+    
+
+}
+
+header .dropdown2 .srch-btn{/*search button*/
+    background-color: #9562ae;
+    color: white;
+    height: 59px;
+    width: 40px;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    left:390px;
+    
+}
+header .dropdown2 .show{/*will show the list with js function*/
+    display: block;
+    position: relative;
+    bottom: 255px;
+}
+/*start of products section*/
+.products{
+    position: relative;
+    
+}
+.products h2{
+    font-size: 48px;
+    text-align: center;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.818);
+}
+.products .prod{
+    direction: rtl;
+    position: relative;
+
+}
+.products .prod .prod-img{
+    height: 440px;
+    width: 365px;
+    border-radius: 25px;
+}
+.products .prod .prod-title .line{/*the line above product title*/
+    border-top: #9562ae 3px solid;
+    width: 75px;
+    position: relative;
+    top: 15px;
+}
+.products .prod .prod-title h3{
+    font-size: 24px;
+    font-weight: 400;
+        
+}
+.products .prod .prod-title{
+    position: relative;
+    bottom: 400px;
+    right: 40px;
+}
+.products .prod .prodCats{/*categories of products*/
+    position: relative;
+    bottom: 140px;
+    right: 10px;
+}
+.products .prod .prodCats ul{
+    list-style: none;
+    margin: 0;
+    padding:0;
+    display: flex;
+   
+    
+
+}
+.products .prod .prodCats ul li{
+    padding: 2px 9px;
+    margin-left: 7px;
+    background-color: rgba(255, 255, 255, 0.633);
+    border-radius: 14px;
+    font-size: 14px;
+
+
+}
+.products .prod-div-flex{/*this makes the grid of the products*/
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    grid-template-rows: repeat(3, 430px);
+    justify-content:center;
+    direction: rtl;
+    gap: 20px 5px;
+    position: relative;
+    top: 30px;
+    
+
+}/*start of offers section*/
+.offers{
+    margin-top: 100px;
+    background-color: #f9f9f9;
+    height: 700px;
+    direction: rtl;
+        
+}
+.offers .offer-content{
+    direction: rtl;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.188);
+    width: 540px;
+    position:absolute;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 190px;
+}
+.offers .offer-head{
+    position: relative;
+    top: 45px;
+}
+.offers  h4{
+    font-size: 24px;
+    font-weight: 500;
+    
+
+
+}
+.offers  span{ /*this span is for the code behind the title*/
+    position: relative;
+    bottom: 50px;
+    right: 455px;
+    
+
+}
+.offers  .offer-content{
+    position: relative;
+    top: 120px;
+    font-size: 14px;
+
+
+}
+.offers .offer-content .locate-p{
+    text-align: left;
+    position: relative;
+    bottom: 25px;
+    left: 10px;
+}
+.offers .offer-content h5{ /*for special customer logo*/
+    background-color: #9562ae;
+    border-radius: 8px;
+    display: inline;
+    padding: 3px 5px;
+    color: white;
+    
+}
+.offers .offer-grid{/* grid of offers*/
+    display: grid;
+    grid-template-columns: repeat(2, 580px);
+    grid-template-rows: repeat(2, 190px);
+    justify-content:center;
+
+}
+.offers div{
+    position: relative;
+    bottom: 50px;
+}
+.offers .offer-btn{
+    background-color: #9562ae;
+    height: 65px;
+    width: 210px;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    line-height: 65px;
+    position: relative;
+    right: 650px;
+    top: 120px;
+    text-align: center;
+}
+
+.website h2{
+    font-size: 48px;
+    text-align: center;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.818);
+}
+
+.website .mob .fa-check{
+    font-size: 19px;
+    color: #9562ae;
+    background-color: rgb(255, 255, 255);
+    height: 45px;
+    width: 45px;
+    font-size: 13px;
+    border-radius: 50%;                 /*to make circle*/
+    display: inline-block;
+    text-align: center;
+    line-height: 45px;                  /*to center the icon in the circle i made line-height= height=28px*/
+    margin-left: 10px;
+    box-shadow: 2px 2px 10px #888888;
+ 
+}
+.website .mob .fa-gem{
+    font-size: 19px;
+    color: #9562ae;
+    background-color: rgb(255, 255, 255);
+    height: 45px;
+    width: 45px;
+    font-size: 13px;
+    border-radius: 50%;                 /*to make circle*/
+    display: inline-block;
+    text-align: center;
+    line-height: 45px;                  /*to center the icon in the circle i made line-height= height=28px*/
+    margin-left: 10px;
+    box-shadow: 2px 2px 10px #888888;
+ 
+}
+.website .mob .fa-paper-plane{
+    font-size: 19px;
+    color: #9562ae;
+    background-color: rgb(255, 255, 255);
+    height: 45px;
+    width: 45px;
+    font-size: 13px;
+    border-radius: 50%;                 /*to make circle*/
+    display: inline-block;
+    text-align: center;
+    line-height: 45px;                  /*to center the icon in the circle i made line-height= height=28px*/
+    margin-left: 10px;
+    box-shadow: 2px 2px 10px #888888;
+ 
+}
+.website .mob h5{
+    font-size: 20px;
+    font-weight: 400;
+
+}
+.website .mob .mob-img{
+    height: 630px;
+}
+.website .mob-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 380px);
+    justify-content: center;
+    position: relative;
+    right: 15px;
+    
+}
+.website .website-btn{
+    background-color: #9562ae;
+    height: 65px;
+    width: 260px;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    line-height: 65px;
+    position: relative;
+    right: 630px;
+    top: 40px;
+    text-align: center;
+}
+.brands{
+    margin-top: 100px;
+    height: 350px;
+}
+.brands h2{
+    font-size: 48px;
+    text-align: center;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.818);
+}
+.brands p{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.403);
+    position: relative;
+    bottom: 35px;
+}
+.brands .brand-img{
+    height: 5px;
+}
+.app{/*gradient color using 3 colors with different opacity*/
+    background-image: linear-gradient(90deg,rgba(53, 0, 160, 0.808),rgba(124, 5, 203, 0.689),rgb(60, 3, 100));
+    height: 350px;
+    
+}
+.app h2{
+    font-size: 45px;
+    text-align: center;
+    font-weight: 400;
+    color: rgb(255, 253, 253);
+    position:relative;
+    top: 80px;
+}
+.app .app-img{
+    display: flex;
+    justify-content: center;
+    position:relative;
+    top: 80px;
+}
+footer{
+    height:450px ;
+    position: relative;
+   
+
+}
+footer .contact-flex{
+    display: flex;
+    justify-content: center;
+}
+footer .contact .fa-envelope-o{
+    font-size: 47px;
+
+}
+footer .contact h6{
+    font-size: 23px;
+    margin-top: -5px;
+
+}
+footer .contact{
+    margin-right: 180px;
+    position: relative;
+    right: 30px;
+    top: 100px;
+    text-align: center;
+
+}
+footer .contact p{
+    color: rgba(0, 0, 0, 0.403) ;
+    margin-top: -40px;
+}
+footer .contact .fa-phone{
+    font-size: 35px;
+}
+footer .contact .fa-location-dot{
+    font-size: 35px;
+}
+footer .media{
+    background-color: rgba(0, 0, 0, 0.812);
+    height: 85px;
+    position: relative;
+    top: 170px;
+    display: flex;
+
+}
+footer .media ul{
+    display: flex;
+    list-style: none;
+    position: relative;
+    right: 250px;
+}
+footer .media ul li a{
+    text-decoration: none;
+    line-height: 60px;
+}
+
+footer .media i{
+    color: white;
+    padding-left: 40px;
+    font-size: 20px;
+}
+footer .media p{
+    text-align: right;
+    color: white;
+    line-height: 50px;
+    position: relative;
+    right: 650px;
+}
